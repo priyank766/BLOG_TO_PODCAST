@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    background-color: #0d1117;
+}
+
+.stApp {
+    background: #0d1117;
+}
+
+/* Title */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2.5rem 0;
+    background: -webkit-linear-gradient(45deg, #ff007f, #ffaf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #161b22;
+    border-right: 1px solid #30363d;
+    padding: 1.5rem;
+}
+
+/* Text Input */
+[data-testid="stTextInput"] label {
+    color: #c9d1d9 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+[data-testid="stTextInput"] input {
+    border-radius: 10px;
+    border: 2px solid #30363d;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    padding: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+[data-testid="stTextInput"] input:focus {
+    border-color: #ff007f;
+    box-shadow: 0 0 0 4px rgba(255, 0, 127, 0.4);
+}
+
+/* Button */
+[data-testid="stButton"] button {
+    background: linear-gradient(45deg, #ff007f, #ffaf00);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 0, 127, 0.3);
+}
+
+[data-testid="stButton"] button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 127, 0.4);
+}
+
+[data-testid="stButton"] button:disabled {
+    background: #30363d;
+    color: #8b949e;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* Audio Player */
+[data-testid="stAudio"] {
+    border-radius: 10px;
+    border: 2px solid #30363d;
+    background-color: #161b22;
+}
+
+/* Download Button */
+[data-testid="stDownloadButton"] button {
+    background: transparent;
+    color: #ff007f;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border: 2px solid #ff007f;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-testid="stDownloadButton"] button:hover {
+    background-color: #ff007f;
+    color: #ffffff;
+}
+
+/* Warning Message */
+[data-testid="stWarning"] {
+    background-color: rgba(255, 175, 0, 0.1);
+    border-color: #ffaf00;
+    color: #ffaf00;
+    border-radius: 10px;
+}
+
+/* Spinner */
+.stSpinner > div > div {
+    border-top-color: #ff007f !important;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

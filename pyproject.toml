@@ -1,0 +1,15 @@
+[project]
+name = "blog-to-pdcst"
+version = "0.1.0"
+description = "Transform any blog post into a captivating podcast with just one click!  
+Paste a blog URL, and let our AI do the rest—fetching, summarizing, and converting the content into a high-quality audio podcast"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agno>=1.7.0",
+    "elevenlabs>=2.5.0",
+    "firecrawl-py>=2.12.0",
+    "groq>=0.29.0",
+    "openai>=1.93.0",
+    "streamlit>=1.46.1",
+]

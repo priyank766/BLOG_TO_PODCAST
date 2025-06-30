@@ -1,0 +1,6 @@
+.venv
+.venv/
+-e.
+__pycache__
+.\uv.lock
+.\audio_generations
